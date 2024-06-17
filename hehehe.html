@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        header div img {
+            opacity: 0.3;
+        }
+
+        header div h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -100px;
+            opacity: 0.9999999;
+        }
+
+        .top_menu{
+            background-color: #444;
+            
+        }
+
+        .top_menu ul{
+            list-style: none;
+            display: flex;
+            justify-content: left;
+        }
+
+        .top_menu ul li{
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+
+        }
+
+        .top_menu ul li:hover{
+            background-color: #555;
+        }
+
+        .left_menu{
+            
+            float: left;
+            
+        }
+
+        .left_menu ul{
+            list-style-type: none;
+            padding-left: 0;
+            background-color: rgb(0, 209, 209);
+            
+        }
+
+        .left_menu ul li{
+            border: rgb(117, 103, 103) solid 3px;
+            padding: 50px;            
+        }
+
+        .left_menu ul a{
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .left_menu ul li:hover{
+            background-color: aqua;
+        }
+
+        .CONTAINER{
+            display: flex;
+            justify-content: center;
+        }
+
+        .main_stydy{
+            height: 1200px;
+            background-color: bisque;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            padding-right: 10px;
+            
+        }
+
+        .main_stydy article {
+            margin-left: 20px;
+            margin-top: 20px;
+            border: 3px solid;
+            width: 350px;
+            height: 250px;
+        }
+
+        .main_stydy article ol li{
+            text-decoration:underline;
+        }
+
+        .study_pic {
+            height: 1200px;
+            background-color: rgb(255, 140, 1);
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            padding-right: 10px;
+            
+            
+        }
+
+        .study_pic h5{
+            padding-left: 40px;
+        }
+
+       
+
+        .study_pic img {
+            width: 200px;
+            height: 247px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 3px solid black;
+            transition: border-color 0.5s; /* 테두리 색상에 대한 transition 추가 */
+
+        }
+
+        .study_pic img:hover {
+            border-color: hotpink; /* 마우스 호버 시 테두리 색상 변경 */
+        }
+
+        .IDPW{
+            margin-left: 200px;
+            padding-left: 10px;
+            background-color: coral;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            clear: both;
+        }
+
+        .IDPW label{
+            width: 100px;
+                   
+        }
+
+        .BUS_table{
+            background-color: #555;  
+            clear: both;       
+            height: 300px;   
+            width: 400px;
+
+            position: relative;
+            right: 400px; top: 500px;
+            
+        }
+
+
+
+        .BUS_table table caption{
+            font-size: 40px;
+        }
+
+        .BUS_table th{
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 100px;
+            height: 50px;
+        }
+
+        .right_menu{
+            position: fixed;
+            right: 0px;
+            top: 500px;
+            
+
+        }
+
+        .right_menu ul{
+            list-style-type: none;
+            text-align: center;
+            padding-left: 0;
+            background-color: rgb(255, 72, 72);
+        }
+
+        .right_menu ul li{
+            padding: 50px;
+        }
+
+        .right_menu ul li:hover{
+            background-color: blueviolet;
+        }
+
+        footer {
+            clear: both;
+            background-color: black;
+            height: 200px;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header style="height: 170px;">
+        <div>
+            <img src="/images_Jauk/Flight Board.jpg" width="100%" height="170px" alt="대충 보드타는 사진">
+        </div>
+        <div>
+            <h1>스노우보드 입문</h1>
+        </div>
+    </header>
+
+    <nav class="top_menu">
+        <ul>
+            <li>장비</li>
+            <li>의류</li>
+            <li>유용한 자료</li>
+        </ul>
+    </nav>
+
+
+    <nav class="left_menu">
+        <ul>
+            <a href=""><li>플레이트</li></a>
+            <a href=""><li>데크</li></a>
+            <a href=""><li>바인딩</li></a>
+            <a href=""><li>스키복</li></a>
+            <a href=""><li>보드복</li></a>        
+        </ul>
+    </nav>
+<div class="CONTAINER">
+    <section class="main_stydy">
+        <h2 style="text-align: center; padding-right: 70px;">학습내용</h2>
+        <article>
+            <h3>넘어지기, 일어나기</h3>
+            <p>초보들이 많이들 간과하는데,
+                스키랑 스노우보드 목숨걸고하는 스포츠다.
+                자빠지는것도 잘 자빠져야 어디 안부러짐.
+            </p>
+        </article>
+
+        <article>
+            <h3>팬쥴럼</h3>
+            <p>통칭: 낙엽.<br>
+                왼쪽손으로 비비고 오른손으로 비비고
+                기본적으로 서있는걸 배우는 단계.
+                좌우로 왔다갔다 하면서 주행의 기초적인
+                감각을 익힌다.
+                <ol>
+                    <li>다치지 않기</li>
+                    <li>바닥 보지않기</li>
+                </ol>
+            </p>
+        </article>
+        <article>
+            <h3>베이직 턴</h3>
+            <p>여기서부터 나름 보드타는 자세가 나온다
+                보통 운동 못하는 애들은 여기서 관두니까
+                너도 관둘거면 일찍 접어라
+                허리틀고 시선틀면 돌아가는데
+                그게 무서워서 쪼냐 ㅉㅉ.
+            </p>
+        </article>
+        <article>
+            <h3>너비스 턴</h3>
+            <p>니가 여자라면 이정도면 타도 박수를 받을 수 있다.
+                남자라면 이걸 했다고 좋아한다면 보드를 얼른 당근마켓에 올려라
+                지금 팔면 늦지않다.
+            </p>
+        </article>
+
+    </section>
+    <aside class="study_pic">
+        <h5>이미지를 클릭하면<br>영상을 볼 수 있습니다<br>↓↓↓↓↓↓↓↓↓↓</h5>
+        <a href=""><img src="/images_Jauk/snowboard1.PNG" alt=""></a>
+        <a href=""><img src="/images_Jauk/snowboard2.PNG" alt=""></a>
+        <a href=""><img src="/images_Jauk/snowboard3.PNG" alt=""></a>
+        <a href=""><img src="/images_Jauk/snowboard4.PNG" alt=""></a>
+    </aside>
+
+    
+    <form action="어디로든 보내드릴게요 ㅎㅎㅎ" method="post">
+        <section class="IDPW">
+            <label for="identity">아이디</label>
+            <input type="text" name="id" id="identity"><br><br>
+            <label for="password">비밀번호</label>
+            <input type="text"  name="PW" id="password"><br><br>
+            <input type="submit" name="" id="" value="로그인" style="float: right;">
+        </section>
+    </form>
+
+
+    <section class="BUS_table">    
+        <table>
+            <caption>셔틀버스 시간표</caption>
+            <tr>
+                <th></th>
+                <th>강남선</th>
+                <th>영등포선</th>
+                <th>동대문선</th>
+            </tr>
+            <tr>
+                <th>새벽선</th>
+                <th>07:00</th>
+                <th>06:00</th>
+                <th>07:40</th>
+            </tr>
+            <tr>
+                <th>오전선</th>
+                <th>09:30</th>
+                <th>08:00</th>
+                <th>09:40</th>
+            </tr>
+            <tr>
+                <th>야간선</th>
+                <th>08:00</th>
+                <th>X</th>
+                <th>X</th>
+            </tr>
+        </table>    
+    </section>
+
+</div>
+    <nav class="right_menu">
+        <ul>
+            <li>고객센터</li>
+            <li>스키장 위치</li>
+            <li>이벤트</li>
+            <li>예약</li>
+        </ul>
+    </nav>
+
+    <footer>
+        여기까지가 기본이다
+        어차피 여기까지 못오는 패배자들이 대다수니까
+        접고싶으면 맘 편히 접어라
+        어차피 니 운동실력으로는 시도조차 힘들다
+        얼른 직장으로 돌아가서 일이나 하렴
+    </footer>
+</body>
+</html>
